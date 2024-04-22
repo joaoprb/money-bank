@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --fonte-primaria: 'Noticia Text', sans-serif;
+    --fonte-secundaria: 'IBM Plex Sans', sans-serif;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+}
+
+html {
+    font-family: var(--fonte-secundaria);
+}
+
+.cabecalho {
+    background-color: hsl(205, 38%, 60%);
+    padding: 10px;
+    text-align: center;
+    box-shadow: 2px 2px 2px 1px rgba(20, 20, 20, 0.342);
+}
+
+.cabecalho > h1 {
+    font-family: var(--fonte-primaria);
+    font-weight: bolder;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: rgba(240, 233, 233, 0.925);
+    /*Adiciona contorno à letra*/
+    -webkit-text-stroke-width: 0.8px;
+    -webkit-text-stroke-color: black;
+}
+
+.form {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#formBanco {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: whitesmoke;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px 2px rgba(20, 20, 20, 0.342);
+    padding-bottom: 40px;
+}
+
+#formBanco > label {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#formBanco input, select, button {
+    border-radius: 5px;
+    padding: 10px;
+    width: 50%;
+}
+
+#formBanco > button {
+    background-color: hsl(205, 71%, 52%);
+    color: white;
+    font-family: var(--fonte-secundaria);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hsl(205, 66%, 37%);
+}
+
+.cartao {
+    border: 2px solid #333;
+    box-shadow: 4px 4px 4px 2px rgba(20, 20, 20, 0.342);
+    background-color: hsl(205, 66%, 37%);
+    color: whitesmoke;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cartao p {
+    margin: 5px 0;
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+
+section {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

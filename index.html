@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <h1>$ Money Bank $</h1>
+    </header>
+
+    <section class="form">
+        <form id="formBanco">
+            <h2>Realizar operações</h2><br>
+            <label>Agência:</label><br>
+            <input type="text" placeholder="Digite o número da agência" id="agenciaInput" required><br>
+            <label>Conta:</label><br>
+            <input type="text" placeholder="Digite o número da conta" id="contaInput" required><br>
+            <label>Selecione uma operação:</label><br>
+            <select id="selecionarOperacao">
+                <option value="consultar">Consultar Saldo</option>
+                <option value="depositar">Depositar</option>
+                <option value="sacar">Sacar</option>
+            </select><br>
+            <button type="submit">Efetuar</button>
+        </form>
+    </section>
+
+    <section>
+        <div id="displayResult" display="none">
+        </div>
+    </section>
+    
+    
+    <script src="index.js"></script>
+</body>
+</html>
